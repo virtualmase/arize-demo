@@ -1,0 +1,44 @@
+/* Custom styles to enhance Tailwind */
+body {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Accordion Styles */
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header::after {
+    content: '\25BC'; /* Down arrow */
+    font-size: 1rem;
+    color: #d1d5db; /* Gray-300 */
+}
+
+.accordion-header.active::after {
+    content: '\25B2'; /* Up arrow */
+}
+
+.accordion-content {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effects with Mercury-Like Silver */
+a:hover, button:hover {
+    color: #d1d5db; /* Mercury-like silver */
+    text-shadow: 0 0 10px rgba(209, 213, 219, 0.5); /* Subtle silver glow */
+}
+
+/* Section Dividers */
+section {
+    border-bottom: 1px solid #4b5563; /* Gray-600 */
+}
+
+/* Image Placeholder */
+img {
+    filter: grayscale(100%); /* Ensure image fits the grayscale aesthetic */
+}
